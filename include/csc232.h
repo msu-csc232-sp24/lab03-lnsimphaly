@@ -19,7 +19,7 @@
 #define EXECUTE_BLOCK FALSE
 
 #define FINISHED_PART_1 TRUE
-#define FINISHED_PART_2 FALSE
+#define FINISHED_PART_2 TRUE
 #define FINISHED_PART_3 FALSE
 
 #include <algorithm>
