@@ -66,11 +66,11 @@ class Dog
 {
 public:
 
-    virtual std::string speak() const = 0;
+    virtual std::string speak() const = 0; // commands the dog to speak
+ 
+    virtual void sit() const = 0; // commands the dog to sit
 
-    virtual void sit() const = 0;
-
-    virtual ~Dog() = default;
+    virtual ~Dog() = default; // destructor
 };
 
 #endif // FINISHED_PART_1
@@ -80,51 +80,51 @@ public:
 class Yorkie : public Dog
 {
 public:
-    Yorkie(const std::string& dogs_name);
+    Yorkie(const std::string& dogs_name); // constructor for Yorkie
     std::string speak() const override;
     void sit() const override;
 private:
     std::string name;
 };
 
-Yorkie::Yorkie(const std::string& dogs_name) : name{ dogs_name }
+Yorkie::Yorkie(const std::string& dogs_name) : name{ dogs_name } // constructor for the Yorkie class
 {
     std::cout << "A Yorkie named " << name << " was just created." << std::endl;
 }
 
 std::string Yorkie::speak() const
 {
-    return  "DID YOU SAY SPEAK?";
+    return  "DID YOU SAY SPEAK?"; // Yorkie responds with "DID YOU SAY SPEAK?"
 }
 
 void Yorkie::sit() const
 {
-    std::cout << "A Yorkie named " << name << " just sat down." << std::endl;
+    std::cout << "A Yorkie named " << name << " just sat down." << std::endl; // print a message saying that the Yorkie sat down
 }
 
 class GreatDaehn : public Dog
 {
 public:
-    GreatDaehn(const std::string& dogs_name);
+    GreatDaehn(const std::string& dogs_name); // constructor for GreatDaehn
     std::string speak() const override;
     void sit() const override;
 private:
     std::string name;
 };
 
-GreatDaehn::GreatDaehn(const std::string& dogs_name) : name{ dogs_name }
+GreatDaehn::GreatDaehn(const std::string& dogs_name) : name{ dogs_name } // constructor for GreatDaehn class
 {
     std::cout << "A GreatDaehn named " << name << " was just created." << std::endl;
 }
 
 std::string GreatDaehn::speak() const
 {
-    return "What?";
+    return "What?"; // GreatDaehn responds with "What?"
 }
 
 void GreatDaehn::sit() const
 {
-    std::cout << "A GreatDaehn named " << name << " just sat down." << std::endl;
+    std::cout << "A GreatDaehn named " << name << " just sat down." << std::endl; // print a message saying that the GreatDaehn sat down
 }
 #endif // FINISHED_PART_2
 
