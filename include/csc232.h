@@ -76,14 +76,56 @@ public:
 #endif // FINISHED_PART_1
 
 #if FINISHED_PART_2
-    // TODO: Task 2.a.1 - Declare your Yorkie class for Task 2a below
 
-    // TODO: Task 2.a.2 - Add your Yorkie definition below
+class Yorkie : public Dog
+{
+public:
+    Yorkie(const std::string& dogs_name);
+    std::string speak() const override;
+    void sit() const override;
+private:
+    std::string name;
+};
 
-    // TODO: Task 2.b.1 - Declare your GreatDaehn class for Task 2b below
+Yorkie::Yorkie(const std::string& dogs_name) : name{ dogs_name }
+{
+    std::cout << "A Yorkie named " << name << " was just created." << std::endl;
+}
 
-    // TODO: Task 2.b.2 - Add your GreatDaehn definition below (before the #endif)
+std::string Yorkie::speak() const
+{
+    return  "DID YOU SAY SPEAK?";
+}
 
+void Yorkie::sit() const
+{
+    std::cout << "A Yorkie named " << name << " just sat down." << std::endl;
+}
+
+class GreatDaehn : public Dog
+{
+public:
+    GreatDaehn(const std::string& dogs_name);
+    std::string speak() const override;
+    void sit() const override;
+private:
+    std::string name;
+};
+
+GreatDaehn::GreatDaehn(const std::string& dogs_name) : name{ dogs_name }
+{
+    std::cout << "A GreatDaehn named " << name << " was just created." << std::endl;
+}
+
+std::string GreatDaehn::speak() const
+{
+    return "What?";
+}
+
+void GreatDaehn::sit() const
+{
+    std::cout << "A GreatDaehn named " << name << " just sat down." << std::endl;
+}
 #endif // FINISHED_PART_2
 
     // DO NOT Modify anything below this line
