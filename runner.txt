@@ -1,0 +1,37 @@
+UpdateCTestConfiguration  from :/home/ayesha/projects/CSC232/scripts/lab03-lnsimphaly/cmake-build-debug/DartConfiguration.tcl
+Parse Config file:/home/ayesha/projects/CSC232/scripts/lab03-lnsimphaly/cmake-build-debug/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/home/ayesha/projects/CSC232/scripts/lab03-lnsimphaly/cmake-build-debug/DartConfiguration.tcl
+Parse Config file:/home/ayesha/projects/CSC232/scripts/lab03-lnsimphaly/cmake-build-debug/DartConfiguration.tcl
+Test project /home/ayesha/projects/CSC232/scripts/lab03-lnsimphaly/cmake-build-debug
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start 1: Scenario: Evaluate Code for Task 1: The Dog interface exists
+
+1: Test command: /home/ayesha/projects/CSC232/scripts/lab03-lnsimphaly/cmake-build-debug/tests "Scenario: Evaluate Code for Task 1: The Dog interface exists"
+1: Test timeout computed to be: 1500
+1: Filters: "Scenario: Evaluate Code for Task 1: The Dog interface exists"
+1: Randomness seeded to: 5179555
+1: ===============================================================================
+1: All tests passed (2 assertions in 1 test case)
+1: 
+1/2 Test #1: Scenario: Evaluate Code for Task 1: The Dog interface exists ....   Passed    0.00 sec
+test 2
+    Start 2: Scenario: Evaluate Code for Task 2: Dog Implementations exist
+
+2: Test command: /home/ayesha/projects/CSC232/scripts/lab03-lnsimphaly/cmake-build-debug/tests "Scenario: Evaluate Code for Task 2: Dog Implementations exist"
+2: Test timeout computed to be: 1500
+2: Filters: "Scenario: Evaluate Code for Task 2: Dog Implementations exist"
+2: Randomness seeded to: 35925891
+2: ===============================================================================
+2: All tests passed (5 assertions in 1 test case)
+2: 
+2/2 Test #2: Scenario: Evaluate Code for Task 2: Dog Implementations exist ...   Passed    0.00 sec
+
+100% tests passed, 0 tests failed out of 2
+
+Total Test time (real) =   0.01 sec
